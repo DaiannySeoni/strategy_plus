@@ -1,0 +1,178 @@
+#BvsComponent {
+  border-top: 2px solid #ffffff;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+}
+
+#BvsComponent form {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 30px;
+  color: #000000;
+
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: center;
+}
+
+#BvsComponent h1 {
+  font-size: 3.5rem;
+  text-align: center;
+  font-family: "Cinzel";
+  margin: 0;
+}
+
+.CampoDeBusca {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+form div label {
+  font-weight: bold;
+  letter-spacing: 1.5px;
+}
+
+.font-bold option {
+  font-weight: bold;
+}
+
+.search {
+  background-color: #215a36;
+  color: #ffffff;
+  border: 2px solid transparent;
+  font-weight: bold;
+}
+
+/* .search:hover {
+  background-color: #215a36;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  transition: 0.5s;
+} */
+
+.Resultado {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 35vw;
+  height: 70vh;
+}
+
+.Resultado div {
+  display: flex;
+  flex-direction: column;
+  justify-content: cemter;
+  align-items: end;
+}
+
+.Resultado textarea {
+  margin-bottom: 5px;
+  text-align: center;
+  max-height: 550px;
+  min-height: 160px;
+  min-width: 600px;
+  background-color: #ffffff;
+}
+
+.Resultado button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  margin: 2px;
+}
+
+.spinner-border {
+  position: absolute;
+  color: #215a36;
+}
+
+.Resultado div .spinner-border {
+  text-align: center;
+}
+
+.copy {
+  background-color: #215a36;
+  border: 1px solid transparent;
+  color: #ffffff;
+}
+
+.copy:hover {
+  background-color: #ffffff;
+  border: 1px solid #215a36;
+  color: #215a36;
+  transition: 0.5s;
+}
+
+.form-check-label {
+  font-weight: normal;
+  border: 2px solid transparent;
+}
+
+.form-check-input:checked {
+  border: 2px solid #ffffff;
+  background-color: #215a36;
+}
+
+/* Notebook */
+@media (max-width: 1550px) and (min-width: 1024px){
+    /* .CampoDeBusca{
+        flex-direction: column;
+    } */
+
+    .Resultado textarea{
+        max-height: 500px;
+        min-width: 450px;
+    }
+}
+
+/* Tablet */
+@media (max-width: 1024px) and (min-width: 768px){
+    /* .CampoDeBusca{
+        flex-direction: column;
+    } */
+
+    .Resultado textarea{
+        max-height: 500px;
+        min-width: 300px;
+    }
+
+    #BvsComponent h1{
+        font-size: 2rem;
+    }
+}
+
+/* Celular */
+@media (max-width: 767px){
+    #BvsComponent {
+        height: 150vh;
+    }
+
+    .CampoDeBusca{
+        flex-direction: column;
+        height: 100vh;
+    }
+
+    .Resultado{
+        margin-top: 25px;
+    }
+
+    #BvsComponent h1 {
+        font-size: 2.5rem;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    .Resultado textarea{
+        max-height: 200px;
+        min-width: 300px;
+    }
+}

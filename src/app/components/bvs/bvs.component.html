@@ -1,0 +1,93 @@
+<div id="BvsComponent">
+  <h1>Busca do Descritor DeCS/MeSH</h1>
+  <div class="CampoDeBusca">
+      <form #searchForm="ngForm" (ngSubmit)="onSubmit(searchForm)">
+        <div class="mb-5">
+          <div class="form-check form-switch">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              role="switch"
+              id="checkSpanishDescription"
+              name="spanishDescription"
+              ngModel
+              [ngModel]="false"
+            />
+            <label class="form-check-label" for="checkSpanishDescription"
+              >Descritor em Espanhol</label
+            >
+          </div>
+          <div class="form-check form-switch">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              role="switch"
+              id="checkFrenchDescription"
+              name="frenchDescription"
+              ngModel
+              [ngModel]="false"
+            />
+            <label class="form-check-label" for="checkFrenchDescription"
+              >Descritor em Francês</label
+            >
+          </div>
+        </div>
+        <div class="mb-5">
+          <label for="InputLinkPortugues" class="form-label">Link Português:</label>
+          <input
+            type="text"
+            class="form-control bold-text"
+            id="InputLinkPortugues"
+            name="linkPortugues"
+            ngModel
+            required
+            #linkPortugues="ngModel"
+          />
+        </div>
+        <div class="mb-5">
+          <label for="InputlinkEnglish" class="form-label">Link English:</label>
+          <input
+            type="text"
+            class="form-control bold-text"
+            id="InputlinkEnglish"
+            name="linkEnglish"
+            ngModel
+            required
+            #linkEnglish="ngModel"
+          />
+        </div>
+        <button type="submit" class="btn btn-primary search">Pesquisar</button>
+      </form>
+      <div class="Resultado">
+        <div>
+          <textarea
+            class="form-control text-dark"
+            id="exampleFormControlTextarea1"
+            rows="20"
+            [(ngModel)]="processResult"
+            disabled
+          ></textarea>
+          <button class="btn btn-primary copy" (click)="copyToClipboard()">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-copy"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M4 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM2 5a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-1h1v1a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h1v1z"
+                stroke="currentColor"
+                stroke-width=".5"
+              />
+            </svg>
+          </button>
+        </div>
+        <div class="spinner-border" *ngIf="searchProcess" role="status">
+          <span class="visually-hidden">Loading...</span>
+        </div>
+      </div>
+  </div>
+</div>

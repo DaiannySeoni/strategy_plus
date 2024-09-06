@@ -1,0 +1,42 @@
+*{
+  background-color: #222428;
+}
+
+#Main {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2.5em;
+
+  color: #ffffff;
+  /* border-radius: 25px; */
+  /* text-align: center; */
+}
+
+#Main h1 {
+  font-size: 5em;
+  font-family: "Cinzel";
+  margin: 0;
+}
+
+#Main div select {
+  margin-top: 50px;
+  width: 25vw;
+  background-color: #ffffff;
+}
+
+#Main div select option {
+  background-color: #ffffff;
+}
+
+@media (max-width: 767px){
+  #Main h1 {
+    font-size: 3.5em;
+  }
+  
+  #Main div select{
+    width: 80vw;
+  }
+}
