@@ -173,6 +173,6 @@ form div label {
 
     .Resultado textarea{
         max-height: 350px;
-        min-width: 450px;
+        min-width: 300px;
     }
 }
