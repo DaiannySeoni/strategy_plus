@@ -8,29 +8,31 @@
   color: #ffffff;
 }
 
-#PubMedComponent form {
-  background-color: #ffffff;
-  border-radius: 10px;
-  padding: 30px;
-  color: #000000;
-
-  display: flex;
-  flex-direction: column;
-  /* align-items: center; */
-  justify-content: center;
-}
-
 #PubMedComponent h1 {
   font-size: 3.5rem;
   text-align: center;
   font-family: "Cinzel";
-  margin: 0;
+  margin: 2rem 0;
 }
 
 .CampoDeBusca {
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+#PubMedComponent form {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 30px;
+  color: #000000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 250px;
+  max-width: 400px;
 }
 
 form div label {
@@ -38,38 +40,30 @@ form div label {
   letter-spacing: 1.5px;
 }
 
-.font-bold option {
-  font-weight: bold;
-}
-
 .search {
   background-color: #215a36;
   color: #ffffff;
   border: 2px solid transparent;
   font-weight: bold;
+  margin-top: 15px;
 }
 
-/* .search:hover {
-    background-color: #215a36;
-    color: #ffffff;
-    border: 2px solid #ffffff;
-    transition: 0.5s;
-  } */
+.font-bold option {
+  font-weight: bold;
+}
 
 .Resultado {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 35vw;
-  height: 70vh;
+  max-width: 650px;
 }
 
 .Resultado div {
-  display: flex;
-  flex-direction: column;
-  justify-content: cemter;
-  align-items: end;
+  position: relative;
+  width: 100%;
 }
 
 .Resultado textarea {
@@ -79,29 +73,19 @@ form div label {
   min-height: 160px;
   min-width: 600px;
   background-color: #ffffff;
+  padding: 1rem;
+  resize: vertical;
 }
 
-.Resultado button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.Resultado button.copy {
   position: absolute;
-  margin: 2px;
-}
-
-.spinner-border {
-  position: absolute;
-  color: #215a36;
-}
-
-.Resultado div .spinner-border {
-  text-align: center;
-}
-
-.copy {
+  top: 8px;
+  right: 8px;
   background-color: #215a36;
   border: 1px solid transparent;
   color: #ffffff;
+  padding: 6px 10px;
+  z-index: 1;
 }
 
 .copy:hover {
@@ -111,9 +95,13 @@ form div label {
   transition: 0.5s;
 }
 
+.spinner-border {
+  margin-top: 10px;
+  color: #215a36;
+}
+
 .form-check-label {
   font-weight: normal;
-  border: 2px solid transparent;
 }
 
 .form-check-input:checked {
@@ -121,58 +109,50 @@ form div label {
   background-color: #215a36;
 }
 
-
-/* Notebook */
-@media (max-width: 1550px) and (min-width: 1024px){
-    /* .CampoDeBusca{
-        flex-direction: column;
-    } */
-
-    .Resultado textarea{
-        max-height: 500px;
-        min-width: 450px;
-    }
+/* Responsivo: Notebook */
+@media (max-width: 1550px) and (min-width: 1024px) {
+  .Resultado textarea {
+    max-height: 500px;
+    min-width: 500px;
+  }
 }
 
-/* Tablet */
-@media (max-width: 1024px) and (min-width: 768px){
-    /* .CampoDeBusca{
-        flex-direction: column;
-    } */
+/* Responsivo: Tablet */
+@media (max-width: 1024px) and (min-width: 768px) {
+  .Resultado textarea {
+    max-height: 450px;
+    min-width: 350px;
+  }
 
-    .Resultado textarea{
-        max-height: 500px;
-        min-width: 300px;
-    }
-
-    #PubMedComponent h1{
-        font-size: 2rem;
-    }
+  #PubMedComponent h1 {
+    font-size: 2.5rem;
+  }
 }
 
-/* Celular */
-@media (max-width: 767px){
-    #PubMedComponent {
-        height: 150vh;
-    }
+/* Responsivo: Celular */
+@media (max-width: 767px) {
+  #PubMedComponent {
+    height: auto;
+    padding: 2rem 1rem;
+  }
 
-    .CampoDeBusca{
-        flex-direction: column;
-        height: 100vh;
-    }
+  .CampoDeBusca {
+    flex-direction: column;
+    gap: 2rem;
+  }
 
-    .Resultado{
-        margin-top: 25px;
-    }
+  #PubMedComponent h1 {
+    font-size: 2rem;
+  }
 
-    #PubMedComponent h1 {
-        font-size: 2.5rem;
-        padding-top: 15px;
-        padding-bottom: 15px;
-    }
+  .Resultado textarea {
+    min-width: 300px;
+    max-height: 350px;
+  }
 
-    .Resultado textarea{
-        max-height: 350px;
-        min-width: 300px;
-    }
+  .Resultado button.copy {
+    top: 5px;
+    right: 5px;
+    font-size: 0.85rem;
+  }
 }
