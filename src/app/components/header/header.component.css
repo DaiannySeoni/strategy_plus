@@ -1,0 +1,36 @@
+#Header {
+  background-color: transparent;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 10vh;
+
+  color: #ffffff;
+}
+
+.Home a {
+  padding-left: 2rem;
+  cursor: pointer;
+  font-weight: bold;
+  font-family: "Cinzel";
+}
+
+.Menu th {
+  padding-right: 2rem;
+}
+
+/* .Menu th a {
+  text-decoration: none;
+  color: inherit;
+  font-weight: normal;
+} */
+
+/* .Menu th a:hover {
+  font-weight: bold;
+  transition: 0.5s;
+} */
+
+.modal-body {
+  font-weight: 100;
+}

@@ -1,0 +1,22 @@
+#Footer {
+  background-color: #1E1E22;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* height: 10vh; */
+
+  border-top: 2px solid #ffffff;
+
+  color: #ffffff;
+  /* position: relative;
+  bottom: 0; */
+  margin: 0px;
+  padding: 35px;
+  text-align: center;
+}
+
+.Detalhes p {
+  font-size: 12px;
+  margin: 0;
+}
