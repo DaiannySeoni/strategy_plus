@@ -3,11 +3,11 @@
   <div class="CampoDeBusca mt-5">
     <form #searchForm="ngForm" (ngSubmit)="onSubmit(searchForm)">
       <div class="mb-5">
-        <div class="form-check form-switch">
-            <input
-              class="form-check-input"
-              type="checkbox"
-              role="switch"
+        <label for="InputLinkPubMed" class="form-label">Link:</label>
+        <input
+          type="text"
+          class="form-control bold-text"
+          role="switch"
           id="InputLinkPubMed"
           name="linkPubMed"
           ngModel
