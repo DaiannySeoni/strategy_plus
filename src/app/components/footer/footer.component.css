@@ -1,14 +1,14 @@
 #Footer {
-  background-color: #085e2b;
+  background-color: #edf2f0;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   /* height: 10vh; */
 
-  border-top: 2px solid #ffffff;
+  border-top: 2px solid #222428;
 
-  color: #ffffff;
+  color: #222428;
   /* position: relative;
   bottom: 0; */
   margin: 0px;
