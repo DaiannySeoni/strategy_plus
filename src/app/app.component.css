@@ -28,7 +28,7 @@
 }
 
 #Main div select option {
-  background-color: #222428;
+  background-color: transparent;
 }
 
 @media (max-width: 767px){
