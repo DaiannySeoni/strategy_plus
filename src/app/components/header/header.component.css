@@ -1,9 +1,9 @@
 /* .modal{
-  background-color: transparent;
+  background-color: #085e2b;
 } */
 
 #Header {
-  background-color: transparent;
+  background-color: #085e2b;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -25,7 +25,7 @@
 }
 
 .modal-content{
-  background-color: transparent;
+  background-color: #085e2b;
 }
 
 /* .Menu th a {
