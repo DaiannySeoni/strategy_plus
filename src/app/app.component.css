@@ -10,7 +10,7 @@
   align-items: center;
   margin: 2.5em;
 
-  color: #ffffff;
+  color: #222428;
   /* border-radius: 25px; */
   /* text-align: center; */
 }
@@ -24,11 +24,11 @@
 #Main div select {
   margin-top: 50px;
   width: 25vw;
-  background-color: #ffffff;
+  background-color: #222428;
 }
 
 #Main div select option {
-  background-color: #ffffff;
+  background-color: #222428;
 }
 
 @media (max-width: 767px){
