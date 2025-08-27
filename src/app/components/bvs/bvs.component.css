@@ -49,7 +49,7 @@ form div label {
 
 .search {
   background-color: #709c8a;
-  color: #e4e8f0;
+  color: #0f0f0f;
   border: 2px solid transparent;
   font-weight: bold;
 }
@@ -71,7 +71,7 @@ form div label {
   max-height: 550px;
   min-height: 160px;
   min-width: 600px;
-  background-color: #709c8a;
+  background-color: #e4f0ea;
   border-radius: 6px;
   padding: 10px;
   resize: none;
