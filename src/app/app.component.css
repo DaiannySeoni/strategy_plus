@@ -24,11 +24,11 @@
 #Main div select {
   margin-top: 50px;
   width: 25vw;
-  background-color: #9cd9ba;
+  background-color: #709c8a;
 }
 
 #Main div select option {
-  background-color: #9cd9ba;
+  background-color: #709c8a;
 }
 
 @media (max-width: 767px){
