@@ -2,27 +2,38 @@
   <h1 class="Home">
     <!-- <a href="#">Strategy+</a> -->
   </h1>
-
-  <nav class="Menu d-flex flex-wrap gap-3" aria-label="Menu principal">
-    <a href="#" data-bs-toggle="modal" data-bs-target="#ferramentaModal">
-      Como usar o aplicativo
-    </a>
-    <a href="#" data-bs-toggle="modal" data-bs-target="#referenciasModal">
-      Referências
-    </a>
-    <a href="#" data-bs-toggle="modal" data-bs-target="#creditosModal">
-      Créditos
-    </a>
-    <a href="#" data-bs-toggle="modal" data-bs-target="#licencasModal">
-      Licenças
-    </a>
-    <a href="#" data-bs-toggle="modal" data-bs-target="#contatoModal">
-      Contato
-    </a>
-  </nav>
+  <div>
+    <tr class="Menu">
+      <th>
+        <a href="#" data-bs-toggle="modal" data-bs-target="#ferramentaModal"
+          >Como usar o aplicativo</a
+        >
+      </th>
+      <th>
+        <a href="#" data-bs-toggle="modal" data-bs-target="#referenciasModal"
+          >Referências</a
+        >
+      </th>
+      <th>
+        <a href="#" data-bs-toggle="modal" data-bs-target="#creditosModal"
+          >Créditos</a
+        >
+      </th>
+      <th>
+        <a href="#" data-bs-toggle="modal" data-bs-target="#licencasModal"
+          >Licenças</a
+        >
+      </th>
+      <th>
+        <a href="#" data-bs-toggle="modal" data-bs-target="#contatoModal"
+          >Contato</a
+        >
+      </th>
+    </tr>
+  </div>
 </div>
 
-<!-- Modal: Como usar o aplicativo -->
+<!-- Modal -->
 <div
   class="modal fade"
   id="ferramentaModal"
@@ -30,12 +41,11 @@
   aria-labelledby="ferramentaModalLabel"
   aria-hidden="true"
 >
-  <div class="modal-dialog modal-dialog-centered modal-lg">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h2 class="modal-title fs-5" id="ferramentaModalLabel">
-          Como usar o aplicativo
-        </h2>
+  <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+       <div class="modal-header">
+
+        <h1 class="modal-title fs-5" id="ferramentaModalLabel">Como usar o aplicativo</h1>
         <button
           type="button"
           class="btn-close"
@@ -43,179 +53,47 @@
           aria-label="Close"
         ></button>
       </div>
-
-      <div class="modal-body text-start">
+      <div class="modal-body text-justified">
+       
         <div class="mt-3 mb-4">
-          <p>
-            O Strategy+ funciona como uma ferramenta que prepara estratégias
-            (strings) de busca de alta sensibilidade para as bases de dados
-            Medline via PubMed (pubmed.gov) e para o Portal Regional BVS/LILACS
-            (bvsalud.org).
-          </p>
-
-          <p>
-            Estas estratégias são utilizadas em Revisão Sistemática, Scoping
-            Review, Mapping Reviews, Avaliação Tecnológica em Saúde – ATS e
-            outras publicações que exigem rigor metodológico.
-          </p>
-
-          <p>
-            Ele está embasado nas principais fontes de recomendação e
-            desenvolvimento de estratégias de alta sensibilidade, bem como em
-            instrumentos que avaliam a qualidade deste tipo de estratégia, como:
-            PRISMA - Preferred Reporting Items for Systematic Reviews and
-            Meta-Analyses
-            (<a
-              href="https://www.prisma-statement.org/"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="text-warning"
-              >https://www.prisma-statement.org/</a
-            >),
-            MECIR - Methodological Expectations of Cochrane Intervention
-            Reviews, Handbook Cochrane / Cochrane Handbook for Systematic
-            Reviews of Interventions na versão online
-            (<a
-              href="https://www.cochrane.org/authors/handbooks-and-manuals/handbook"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="text-warning"
-              >https://www.cochrane.org/authors/handbooks-and-manuals/handbook</a
-            >)
-            e PRESS - Peer Review of Electronic Search Strategies
-            (<a
-              href="https://www.reciis.icict.fiocruz.br/index.php/reciis/article/download/3351/2650/15994"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="text-warning"
-              >link</a
-            >).
-          </p>
-
-          <p>
-            Para o desenvolvimento da estratégia de busca de alta sensibilidade
-            para o Portal Regional BVS/LILACS, foi utilizada na elaboração do
-            Strategy+ a tese de doutorado de PUGA, M.E.S. (2015)
-            (<a
-              href="https://repositorio.unifesp.br/items/8fd68bc4-1fab-4c28-a149-a36f44aceb4f"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="text-warning"
-              >link</a
-            >)
-            e o ebook da mesma autora, PUGA, M.E.S. (2025)
-            (<a
-              href="https://repositorio.unifesp.br/items/da228c8d-5c47-4dc3-9f69-ad1570f8f43f"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="text-warning"
-              >link</a
-            >).
-          </p>
-          <hr />
+   
+          <p class="text-start">O Strategy + funciona como uma ferramenta que prepara estratégias (strings) de busca de alta sensibilidade para as bases de Dados Medline via PubMed (pubmed.gov) e para o Portal Regional BVS / LILACS (bvsalud.org).</p>  
+          <p class="text-start">Estas estratégias são utilizadas em Revisão Sistemática, Scoping Review, Mapping Reviews, Avaliação Tecnológica em Saúde – ATS e outras publicações que exigem rigor metodológico.</p>
+          <p class="text-start">Ele está embasado nas principais fontes de recomendação e desenvolvimento de estratégias de alta sensibilidade, bem como, em instrumentos que avaliam a qualidade deste tipo de estratégia como: PRISMA - Preferred Reporting Items for Systematic Reviews and Meta-Analyses (https://www.prisma-statement.org/), MECIR - Methodological Expectations of Cochrane Intervention Reviews,  Handbook Cochrane / Cochrane Handbook for Systematic Reviews of Interventions na versão online (https://www.cochrane.org/authors/handbooks-and-manuals/handbook) e  PRESS - Peer Review of Electronic Search Strategies (https://www.reciis.icict.fiocruz.br/index.php/reciis/article/
+            download/3351/2650/15994).</p>   
+          <p class="text-start">Para o desenvolvimento da estratégia de busca de alta sensibilidade para o Portal Regional BVS / LILACS, foi utilizada na elaboração do Strategy +, a tese de doutorado de PUGA, M.E.S. (2015) (https://repositorio.unifesp.br/items/8fd68bc4-1fab-4c28-a149-a36f44aceb4f)  e o ebook da mesma autora, PUGA, M.E.S. (2025). (https://repositorio.unifesp.br/items/da228c8d-5c47-4dc3-9f69-ad1570f8f43f).</p> 
+          <hr>
         </div>
-
         <div class="mt-3 mb-4">
-          <h3 class="mb-4 fs-5">BVS</h3>
-
-          <p>
-            1° Acesse o
-            <a
-              href="https://decs.bvsalud.org/"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="text-warning"
-              >DeCS (Descritores em Ciências da Saúde)</a
-            >
-            e pesquise os termos desejados em português. Caso precise de ajuda,
-            consulte os tutoriais de pesquisa sobre o DeCS
-            (<a
-              href="https://youtu.be/Su06QYc946g"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="text-warning"
-              >parte 1</a
-            >,
-            <a
-              href="https://youtu.be/d73_babcDCo"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="text-warning"
-              >parte 2</a
-            >).
-          </p>
-
-          <p>
-            2° Após encontrar o termo no DeCS, copie o link do navegador e cole
-            no modelo de busca BVS do aplicativo Strategy+, no campo “Link em
-            português”.
-          </p>
-
-          <p>
-            3° Agora traduza para o inglês o termo, clicando no canto superior
-            direito no idioma “English”. Copie e cole o link do navegador no
-            campo “Link em English”.
-          </p>
-
-          <p>
-            4° No aplicativo Strategy+, aplique o filtro “Descritor em
-            espanhol” e clique em pesquisar.
-          </p>
-
-          <p>
-            <strong class="text-warning">Importante:</strong> A estratégia
-            gerada deve ser utilizada na “busca avançada” da base de dados da
-            <a
-              href="https://bvsalud.org/"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="text-warning"
-              >BVS (Biblioteca Virtual da Saúde)</a
-            >.
-          </p>
-          <hr />
+          
+          <h4 class="mb-4">BVS:</h4>
+          <p class="text-start">1° Acesse o <a href="https://decs.bvsalud.org/" target="_blank" rel="noopener noreferrer" class="text-warning">DeCS (Descritores em Ciências da Saúde)</a> e pesquise os termos desejados em português. Caso precise de ajuda, consulte os tutoriais de pesquisa sobre o DeCS (<a href="https://youtu.be/Su06QYc946g" target="_blank" rel="noopener noreferrer" class="text-warning">parte 1</a>, <a href="https://youtu.be/d73_babcDCo" target="_blank" rel="noopener noreferrer" class="text-warning">parte 2</a>).</p>
+          <p class="text-start">2° Após encontrar o termo no DeCS, copie o link do navegador e cole no modelo de busca BVS do aplicativo Strategy +, no campo “Link em português”.</p>
+          <p class="text-start">3° Agora traduza para o inglês o termo, clicando no canto superior direito o idioma “English”. Copie e cole o link do navegador no campo “Link em english”.</p>
+          <p class="text-start">4° No aplicativo Strategy +, aplique o filtro “Descritor em espanhol” e clique em pesquisar.</p>
+          <p><b class="text-warning">Importante</b>: A estratégia gerada, deve ser utilizada na “busca avançada”  da base de dados da <a href="https://bvsalud.org/" target="_blank" rel="noopener noreferrer" class="text-warning">BVS (Biblioteca Virtual da Saúde)</a>.</p>
+          <hr>
         </div>
-
         <div class="mt-3 mb-4">
-          <h3 class="mb-4 fs-5">PubMed</h3>
-
-          <p>
-            1° Acesse o
-            <a
-              href="https://www.ncbi.nlm.nih.gov/mesh/"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="text-warning"
-              >MeSH Database</a
-            >
-            e pesquise os termos desejados.
-          </p>
-
-          <p>
-            2° Após encontrar o termo no MeSH Database, copie o link do
-            navegador e cole no campo “Link” do modelo de busca PubMed do
-            aplicativo Strategy+.
-          </p>
-
-          <p>
-            <strong class="text-warning">Importante:</strong> A estratégia
-            gerada deve ser utilizada na “busca avançada” da base de dados da
-            <a
-              href="https://pubmed.ncbi.nlm.nih.gov/"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="text-warning"
-              >PubMed</a
-            >.
-          </p>
-          <hr />
+          
+          <h4 class="mb-4">PubMed:</h4>
+          <p class="text-start">1° Acesse o <a href="https://www.ncbi.nlm.nih.gov/mesh/" target="_blank" rel="noopener noreferrer" class="text-warning">MeSH Database</a> e pesquise os termos desejados.</p>
+          <p class="text-start">2°Após encontrar o termo no MeSH Database, copie o link do navegador e cole no no campo “Link” do modelo de busca PubMed do aplicativo Strategy +.</p>
+          <p><b class="text-warning">Importante</b>:  A estratégia gerada, deve ser utilizada na “busca avançada”  da base de dados da <a href="https://pubmed.ncbi.nlm.nih.gov/" target="_blank" rel="noopener noreferrer" class="text-warning">Pubmed</a>.</p>
+          <hr>
         </div>
-      </div>
+        </div>
+      <!-- <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+          Close
+        </button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div> -->
     </div>
   </div>
 </div>
 
-<!-- Modal: Referências -->
+<!-- Modal -->
 <div
   class="modal fade"
   id="referenciasModal"
@@ -223,12 +101,10 @@
   aria-labelledby="referenciasModalLabel"
   aria-hidden="true"
 >
-  <div class="modal-dialog modal-dialog-centered modal-lg">
+  <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content">
       <div class="modal-header">
-        <h2 class="modal-title fs-5" id="referenciasModalLabel">
-          Referências
-        </h2>
+        <h1 class="modal-title fs-5" id="referenciasModalLabel">Referências</h1>
         <button
           type="button"
           class="btn-close"
@@ -236,129 +112,35 @@
           aria-label="Close"
         ></button>
       </div>
-
-      <div class="modal-body text-start">
-        <h3 class="fs-6">
-          Cochrane Handbook – Capítulo sobre Estratégias de Busca
-        </h3>
-        <p>
-          - Lefebvre C, Glanville J, Briscoe S, Featherstone R, Littlewood A,
-          Metzendorf M-I, Noel-Storr A, Paynter R, Rader T, Thomas J, Wieland
-          LS. Chapter 4: Searching for and selecting studies. In: Higgins JPT,
-          Thomas J, Chandler J, Cumpston M, Li T, Page MJ, Welch VA (editors).
-          Cochrane Handbook for Systematic Reviews of Interventions version 6.5
-          (updated September 2024). Cochrane, 2024. Available from:
-          <a
-            href="https://www.cochrane.org/authors/handbooks-and-manuals/handbook/current/chapter-04"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="text-warning"
-            >link</a
-          >
-        </p>
-
-        <h3 class="fs-6">
-          MECIR Manual – Methodological Expectations of Cochrane Intervention
-          Reviews
-        </h3>
-        <p>
-          - Higgins JPT, Lasserson T, Thomas J, Flemyng E, Churchill R.
-          Methodological Expectations of Cochrane Intervention Reviews (MECIR):
-          Standards for the conduct and reporting of new Cochrane Intervention
-          Reviews, and the planning and conduct of updates. Version August 2023.
-          Cochrane, 2023. Available from:
-          <a
-            href="https://community.cochrane.org/book_pdf/545"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="text-warning"
-            >link</a
-          >
-        </p>
-
-        <h3 class="fs-6">PRISMA 2020</h3>
-        <p>
-          - Page MJ, McKenzie JE, Bossuyt PM, Boutron I, Hoffmann TC, Mulrow
-          CD, et al. The PRISMA 2020 statement: an updated guideline for
-          reporting systematic reviews. BMJ. 2021;372:n71. doi: 10.1136/bmj.n71.
-          Available from:
-          <a
-            href="https://www.bmj.com/content/372/bmj.n71"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="text-warning"
-            >link</a
-          >
-        </p>
-
-        <h3 class="fs-6">PRESS – Peer Review of Electronic Search Strategies</h3>
-        <p>
-          - McGowan J, Sampson M, Salzwedel DM, Cogo E, Foerster V, Lefebvre C.
-          PRESS Peer Review of Electronic Search Strategies: 2015 Guideline
-          Statement. J Clin Epidemiol. 2016 Jul;75:40–6. doi:
-          10.1016/j.jclinepi.2016.01.021.
-        </p>
-
-        <p>
-          - Masterson D, Martinez-Silveira MS, da Silva CH, Laguardia J.
-          Revisão por pares das estratégias de busca para revisões sistemáticas:
-          o PRESS, histórico, tradução para o português e funcionalidade. Rev
-          Eletr Com Inf Inov Saúde – RECIIS. 2023;17(3). Disponível em:
-          <a
-            href="https://www.reciis.icict.fiocruz.br/index.php/reciis/article/download/3351/2650/15994"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="text-warning"
-            >link</a
-          >
-        </p>
-
-        <h3 class="fs-6">
-          A estratégia de busca de alta sensibilidade para o Portal Regional
-          BVS/LILACS e os filtros de busca validados para identificação de
-          ensaios clínicos foram desenvolvidos e pré-definidos a partir dos
-          estudos abaixo
-        </h3>
-        <p>
-          - PUGA, Maria Eduarda dos Santos. Estratégia de busca sensibilizada e
-          filtros metodológicos para identificação de ensaios clínicos na base
-          de dados LILACS. 2015. 155 f. Tese (Doutorado em Saúde Baseada em
-          Evidências) - Escola Paulista de Medicina, Universidade Federal de São
-          Paulo (UNIFESP), São Paulo, 2015. Disponível em:
-          <a
-            href="https://repositorio.unifesp.br/items/8fd68bc4-1fab-4c28-a149-a36f44aceb4f"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="text-warning"
-            >link</a
-          >
-        </p>
-
-        <p>
-          - PUGA, Maria Eduarda dos Santos. Busca na base de dados Lilacs:
-          estratégias de alta sensibilidade e filtros para identificação de
-          ensaios clínicos validados. São Paulo: Universidade Federal de São
-          Paulo, 2025. Disponível em:
-          <a
-            href="https://repositorio.unifesp.br/items/da228c8d-5c47-4dc3-9f69-ad1570f8f43f"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="text-warning"
-            >link</a
-          >
-        </p>
-
-        <hr />
-        <p>
-          Atualizações - Daianny Seoni de Oliveira, Bibliotecária do Campus
-          Baixada Santista - Unifesp
-        </p>
+      <div class="modal-body text-justified">
+        <h1 class="modal-title fs-5" id="referenciasModalLabel">Cochrane Handbook – Capítulo sobre Estratégias de Busca</h1><p>
+       <p>- Lefebvre C, Glanville J, Briscoe S, Featherstone R, Littlewood A, Metzendorf M-I, Noel-Storr A, Paynter R, Rader T, Thomas J, Wieland LS. Chapter 4: Searching for and selecting studies. In: Higgins JPT, Thomas J, Chandler J, Cumpston M, Li T, Page MJ, Welch VA (editors). Cochrane Handbook for Systematic Reviews of Interventions version 6.5 (updated September 2024). Cochrane, 2024. Available from: https://www.cochrane.org/authors/handbooks-and-manuals/handbook/current/chapter-04</p>
+        <h1 class="modal-title fs-5" id="referenciasModalLabel">MECIR Manual – Methodological Expectations of Cochrane Intervention Reviews</h1><p>
+        <p>- Higgins JPT, Lasserson T, Thomas J, Flemyng E, Churchill R. Methodological Expectations of Cochrane Intervention Reviews (MECIR): Standards for the conduct and reporting of new Cochrane Intervention Reviews, and the planning and conduct of updates. Version August 2023. Cochrane, 2023. Available from: https://community.cochrane.org/book_pdf/545<p>
+        <h1 class="modal-title fs-5" id="referenciasModalLabel">PRISMA 2020</h1><p>
+        <p>- Page MJ, McKenzie JE, Bossuyt PM, Boutron I, Hoffmann TC, Mulrow CD, et al. The PRISMA 2020 statement: an updated guideline for reporting systematic reviews. BMJ. 2021;372:n71. doi: 10.1136/bmj.n71. Available from: https://www.bmj.com/content/372/bmj.n71<p>
+        <h1 class="modal-title fs-5" id="referenciasModalLabel">PRESS – Peer Review of Electronic Search Strategies</h1><p>
+        <p>- Peer Review of Electronic Search Strategies. McGowan J, Sampson M, Salzwedel DM, Cogo E, Foerster V, Lefebvre C. PRESS Peer Review of Electronic Search Strategies: 2015 Guideline Statement. J Clin Epidemiol. 2016 Jul;75:40–6. doi: 10.1016/j.jclinepi.2016.01.021<p>
+        <p>- Masterson D, Martinez-Silveira MS, da Silva CH, Laguardia J. Revisão por pares das estratégias de busca para revisões sistemáticas: o PRESS, histórico, tradução para o português e funcionalidade. Rev Eletr Com Inf Inov Saúde – RECIIS. 2023;17(3). Disponível em: https://www.reciis.icict.fiocruz.br/index.php/
+          reciis/article/download/3351/2650/15994<p>
+        <h1 class="modal-title fs-5" id="referenciasModalLabel">A estratégia de busca  de alta sensibilidade para o Portal Regional BVS / LILACS e os  filtros de busca validados para identificação de ensaios clínicos foram desenvolvidos  e pré definidos a partir dos estudos abaixo:</h1><p>
+        <p>- PUGA, Maria Eduarda dos Santos. Estratégia de busca sensibilizada e filtros metodológicos para identificação de ensaios clínicos na base de dados LILACS. 2015. 155 f. Tese (Doutorado em Saúde Baseada em Evidências) - Escola Paulista de Medicina, Universidade Federal de São Paulo (UNIFESP), São Paulo, 2015. Disponível em: https://repositorio.unifesp.br/items/8fd68bc4-1fab-4c28-a149-a36f44aceb4f<p>
+        <p>- PUGA, Maria Eduarda dos Santos. Busca na base de dados Lilacs : estratégias de alta sensibilidade e filtros para identificação de ensaios clínicos validados. São Paulo: Universidade Federal de São Paulo, 2025. Disponível em: https://repositorio.unifesp.br/items/da228c8d-5c47-4dc3-9f69-ad1570f8f43f<p>
+       
+          <p>
+        <hr>
+        <p>Atualizações - Daianny Seoni de Oliveira, Bibliotecária do Campus Baixada Santista - Unifesp</p>
       </div>
-    </div>
-  </div>
+      <!-- <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+          Close
+        </button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div> -->
+      </div>
+      </div>
 </div>
 
-<!-- Modal: Créditos -->
 <div
   class="modal fade"
   id="creditosModal"
@@ -369,7 +151,7 @@
   <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content">
       <div class="modal-header">
-        <h2 class="modal-title fs-5" id="creditosModalLabel">Créditos</h2>
+        <h1 class="modal-title fs-5" id="creditosModalLabel">Créditos</h1>
         <button
           type="button"
           class="btn-close"
@@ -377,34 +159,34 @@
           aria-label="Close"
         ></button>
       </div>
+      <div class="modal-body text-center mt-3 mb-3">
+          <div class="text-start mb-5">
+         <p class="mb-4">O Strategy+ é um aplicativo desenvolvido para a geração automática de estratégias de busca (strings) voltadas às principais bases de dados em saúde, como o PubMed/MEDLINE e a Biblioteca Virtual em Saúde (BVS/LILACS). A ferramenta foi idealizada e orientada pela bibliotecária Daianny Seoni de Oliveira, com desenvolvimento técnico realizado por Mario Ambrosio de Souza Neto, estagiário do curso de Ciência de Dados em 2024.</p>
+         </div>
 
-      <div class="modal-body text-start mt-3 mb-3">
-        <p class="mb-4">
-          O Strategy+ é um aplicativo desenvolvido para a geração automática de
-          estratégias de busca (strings) voltadas às principais bases de dados
-          em saúde, como o PubMed/MEDLINE e a Biblioteca Virtual em Saúde
-          (BVS/LILACS). A ferramenta foi idealizada e orientada pela
-          bibliotecária Daianny Seoni de Oliveira, com desenvolvimento técnico
-          realizado por Mario Ambrosio de Souza Neto, estagiário do curso de
-          Ciência de Dados em 2024.
-        </p>
+       </div>
+          
+              <div class="text-start mb-5">
+          <hr>
+        </div>
 
-        <hr />
+        <div class="text-start mb-3">
+          <h5 class="mb-5">Como citar o aplicativo Strategy +, conforme a ABNT:</h5>
+          <p>OLIVEIRA, Daianny Seoni; SOUZA NETO, Mario Ambrosio de.  Strategy+: geração automática de estratégia de busca. Versão 1. Santos: Unifesp, 2024. Disponível em: [link]. Acesso em: [data].</p>
+        </div>
 
-        <h3 class="fs-6 mb-3">
-          Como citar o aplicativo Strategy+, conforme a ABNT:
-        </h3>
-        <p>
-          OLIVEIRA, Daianny Seoni; SOUZA NETO, Mario Ambrosio de. Strategy+:
-          geração automática de estratégia de busca. Versão 1. Santos: Unifesp,
-          2024. Disponível em: [link]. Acesso em: [data].
-        </p>
-      </div>
+      
+             <!-- <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+          Close
+        </button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div> -->
     </div>
   </div>
 </div>
 
-<!-- Modal: Licenças -->
+<!-- Modal -->
 <div
   class="modal fade"
   id="licencasModal"
@@ -415,7 +197,7 @@
   <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content">
       <div class="modal-header">
-        <h2 class="modal-title fs-5" id="licencasModalLabel">Licenças</h2>
+        <h1 class="modal-title fs-5" id="licencasModalLabel">Licenças</h1>
         <button
           type="button"
           class="btn-close"
@@ -423,31 +205,21 @@
           aria-label="Close"
         ></button>
       </div>
-
       <div class="modal-body text-center">
-        <p class="mb-3">
-          Esse sistema está licenciado sob uma licença Creative Commons CC
-          BY-NC-ND 4.0.
-        </p>
-        <p>
-          Esta licença exige que os reutilizadores deem crédito ao criador.
-          Permite que os reutilizadores copiem e distribuam o material em
-          qualquer meio ou formato, de forma não adaptada e apenas para fins não
-          comerciais. Mais informações em:
-          <a
-            href="https://creativecommons.org/licenses/by-nc-nd/4.0/"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="text-danger"
-            >Creative Commons</a
-          >.
-        </p>
+        <p class="mb-3">Esse sistema está licenciado sob uma licença Creative Commons CC BY-NC-ND 4.</p>
+        <p>Esta licença exige que os reutilizadores dêem crédito ao criador. Permite que os reutilizadores copiem e distribuam o material em qualquer meio ou formato, de forma não adaptada e apenas para fins não comerciais. Mais informações em: <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" rel="noopener noreferrer" class="text-danger">Creative Commons</a>.</p>
       </div>
+      <!-- <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+          Close
+        </button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div> -->
     </div>
   </div>
 </div>
 
-<!-- Modal: Contato -->
+<!-- Modal -->
 <div
   class="modal fade"
   id="contatoModal"
@@ -458,7 +230,7 @@
   <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content">
       <div class="modal-header">
-        <h2 class="modal-title fs-5" id="contatoModalLabel">Contato</h2>
+        <h1 class="modal-title fs-5" id="contatoModalLabel">Contato</h1>
         <button
           type="button"
           class="btn-close"
@@ -466,10 +238,15 @@
           aria-label="Close"
         ></button>
       </div>
-
       <div class="modal-body text-center">
         <p>Dúvidas/informações: daianny.seoni@unifesp.br</p>
       </div>
+      <!-- <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+          Close
+        </button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div> -->
     </div>
   </div>
 </div>
