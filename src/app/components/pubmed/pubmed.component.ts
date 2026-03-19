@@ -77,3 +77,4 @@ export class PubmedComponent implements OnInit {
       // alert('Texto copiado para a área de transferência!');
     }
   }
+}
