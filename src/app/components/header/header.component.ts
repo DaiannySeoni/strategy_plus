@@ -8,5 +8,5 @@ import { Component } from '@angular/core';
   styleUrl: './header.component.css'
 })
 export class HeaderComponent {
-  email = 'usuario@unifesp.br';
+  email = 'daianny.seoni@unifesp.br';
 }
